@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-size: 12px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .LoginForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form2 {
+            background-color: white;
+            width: 270px;
+            border-radius: 8px;
+            padding: 20px 20px;
+            box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+        }
+        .inputContainer {
+            position: relative;
+            height: 20px;
+            width: 90%;
+            margin-bottom: 20px;
+
+        }
+        .LoginBtn {
+            margin-left: auto;
+            background-color: hwb(229 14% 20%);
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+            border: none;
+        }
+
+        .LoginBtn:hover {
+            background-color: hsl(189, 58%, 55%);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #1778F2;text-align: center;"><b>EyeBook</b></h1>
+<div class="LoginForm">
+<form class="form2" >
+    <div >
+        <b style="font-size: 15px;">Log in to Facebook</b><br>
+    </div>
+    <div class="inputContainer">
+        <input type="text" maxlength="60" placeholder="Email address or phone number" style="width:100%;max-width: 212px;">
+</div>
+<div class="inputContainer">  
+        <input type="password" placeholder="Password" style="width:100%;max-width: 212px";>
+</div>
+<div >
+    <input type="submit" value="Log in" class="LoginBtn" >
+</div>
+<div>
+<a href="Signup.html">Forgotton account?<br>  Sign up for facebook</a>
+</div>
+</form>
+</div>
+</body>
+</html>

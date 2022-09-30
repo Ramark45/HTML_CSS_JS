@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+        <div id="original">ORIGINAL</div>
+        <div class="btn" >
+            <button id="button" onclick="myfunction()">BUTTON</button>
+        </div>
+        <script type="text/javascript">
+            //let original = document.getElementById("original");    
+            function myfunction(){
+                let wrapper = document.createElement("div");
+                wrapper.id="wrapperid";
+                wrapper.setAttribute("div","wrapper");
+                let txtNode=document.createTextNode("Wrapped");
+                wrapper.appendChild(txtNode);
+                document.querySelector("div").appendChild(wrapper);
+            }
+        </script>
+        <style>
+            #original{
+                text-align: center;
+            }
+            .btn{
+                text-align: center;
+            }
+        </style>
+</body>
+</html>

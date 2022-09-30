@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-size: 12px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .signupForm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form1 {
+            background-color: white;
+            width: 250px;
+            border-radius: 8px;
+            padding: 20px 20px;
+            box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+        }
+        .inputContainer {
+            position: relative;
+            height: 20px;
+            width: 90%;
+            margin-bottom: 17px;
+        }
+       
+        .input {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            border: 1px solid #DADCE0;
+            border-radius: 7px;
+            font-size: 16px;
+            padding: 0 20px;
+            outline: none;
+            background: none;
+            z-index: 1;
+        }
+        .input:focus {
+            border: 2px solid #0ec917;
+        }
+
+        .submitBtn {
+            margin-left: auto;
+            background-color: hsl(120, 89%, 45%);
+            padding: 10px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+            border: 1px solid hsl(120, 89%, 45%);
+        }
+
+        .submitBtn:hover {
+            background-color: hsl(189, 58%, 55%);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #1778F2;text-align: center;"><b>EyeBook</b></h1>
+<div class="signupForm">
+<form class="form1" >
+    <div >
+        <b style="font-size: 20px;">Create a new account</b><br>
+        <b style="color: grey;">It's Quick and easy</b>
+    </div>
+    <div><hr></div>
+    <div class="inputContainer">
+            <input type="text" maxlength="60" placeholder="First name" style="width:100%;max-width: 100px;">
+            <input type="text" maxlength="60" placeholder="Surname" style="width:100%;max-width: 100px;">
+    </div>
+    <div class="inputContainer">
+            <input type="text" maxlength="60" placeholder="Mobile number or email address" style="width:100%;max-width: 212px;">
+    </div>
+    <div class="inputContainer">  
+            <input type="password" placeholder="New password" style="width:100%;max-width: 212px";>
+    </div>
+    <div class="inputContainer" style="text-align: left;">
+    <p>Date of birth</p>
+    </div>
+    <div class="inputContainer">
+            <select style="width:100%;max-width: 55px;">
+                    <option selected>1</option><option >2</option><option >3</option>
+                    <option >4</option><option >5</option><option >6</option>
+                    <option >7</option><option >8</option><option >9</option>
+                    <option >10</option><option >11</option><option >12</option>
+                    <option >13</option><option >14</option><option >15</option>
+                    <option >16</option><option >17</option><option >18</option>
+                    <option >19</option><option >20</option><option >21</option>
+                    <option >21</option><option >23</option><option >24</option>
+                    <option >25</option><option >26</option><option >27</option>
+                    <option >28</option><option >29</option><option >30</option>
+                    <option >31</option>
+
+                </select>
+                <select style="width:100%;max-width: 80px;">
+                    <option selected>Jan</option><option >Feb</option>
+                    <option >Mar</option><option >Apr</option>
+                    <option >May</option><option >Jun</option>
+                    <option >July</option><option >Aug</option>
+                    <option >Sep</option><option >Oct</option>
+                    <option >Nov</option><option >Dec</option>
+
+                </select>
+        
+                <select style="width:100%;max-width: 80px;">
+                    <option selected>2022</option><option >2021</option>
+                    <option >2020</option><option >2019</option>
+                    <option >2018</option><option >2017</option>
+                    <option >2016</option><option >2015</option>
+
+                </select>
+    </div>
+    <div class="inputContainer" style="text-align: left;">
+            <p>Gender</p>
+   </div>
+   <div class="inputContainer">
+                <input type="radio" name="gender">Female
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Custom
+   </div>
+   <div >
+                <input type="submit" value="Sign Up" class="submitBtn" >
+   </div>
+   <div>
+    <a href="login.html">Alredy Have an account?</a>
+   </div>
+</form>
+    </div>
+</body>
+</html>
