@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramar's Calculator</title>
+    <script>
+        function display(val)
+        {
+        document.getElementById("inputs").value+=val}
+        function solve()
+        {
+        let x = document.getElementById("inputs").value
+        let y = eval(x)
+        document.getElementById("inputs").value = y
+        }
+        function clr()
+        {
+        document.getElementById("inputs").value = ""
+        }
+        </script>
+    <style>
+        .form{
+            background-color: #baebe6;
+            margin: auto;
+        }
+        .title{
+            margin-left: 41%;
+            margin-top: 15%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            text-align:center;
+            font-weight: bolder;
+            width: 200px;
+            color:rgb(181, 16, 16);
+            border: solid black 2px;
+            }
+        input[type="button"]
+            {
+            border-radius: 10px;
+            background-color:hsla(110, 84%, 55%, 0.932);
+            color: black;
+            border-color:hsl(253, 84%, 48%) ;
+            width:100%;
+            }
+        input[type="text"]
+            {
+            border-radius: 10px;
+            text-align: right;
+            background-color:white;
+            border-color: hsl(253, 84%, 48%) ;
+            width:95%
+            }
+        body{
+            background-color: #f9eeee;
+            }
+    </style>    
+</head>
+
+<body>
+    <form class="form">
+<div class = title>Ramar's Calculator</div>
+<table style="border: 2px solid black" align="center">
+<tr>
+<td><input type="button" value="c" onclick="clr()"/> </td>
+<td colspan="3"><input type="text" id="inputs"/></td>
+
+</tr>
+<tr>
+
+<td><input type="button" value="+" onclick="display('+')"/> </td>
+<td><input type="button" value="1" onclick="display('1')"/> </td>
+<td><input type="button" value="2" onclick="display('2')"/> </td>
+<td><input type="button" value="3" onclick="display('3')"/> </td>
+</tr>
+<tr>
+<td><input type="button" value="-" onclick="display('-')"/> </td>
+<td><input type="button" value="4" onclick="display('4')"/> </td>
+<td><input type="button" value="5" onclick="display('5')"/> </td>
+<td><input type="button" value="6" onclick="display('6')"/> </td>
+</tr>
+<tr>
+<td><input type="button" value="*" onclick="display('*')"/> </td>
+<td><input type="button" value="7" onclick="display('7')"/> </td>
+<td><input type="button" value="8" onclick="display('8')"/> </td>
+<td><input type="button" value="9" onclick="display('9')"/> </td>
+</tr>
+<tr>
+<td><input type="button" value="/" onclick="display('/')"/> </td>
+<td><input type="button" value="." onclick="display('.')"/> </td>
+<td><input type="button" value="0" onclick="display('0')"/> </td>
+<td><input type="button" value="=" onclick="solve()"/> </td>
+</tr>
+</table>
+    </form>
+</body>
+</html>
